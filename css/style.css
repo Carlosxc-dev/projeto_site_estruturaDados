@@ -1,0 +1,17 @@
+body{
+    color: black;
+    text-align: left;
+    background-color: whitesmoke;
+}
+
+h1{
+    text-align: left;
+    color: blue;
+}
+h2{
+    color: cornflowerblue;
+}
+ul{
+    color: black;
+    font-weight: normal;
+}
