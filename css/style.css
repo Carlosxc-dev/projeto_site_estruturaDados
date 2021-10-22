@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-    em html e id = em css e #
+    em html e id = em css e #  --  so pode udar id uma vez
     em html e class = em css e ponto (.)
 
 */
@@ -27,4 +27,8 @@ h2{
 }
 h3{
     color: black;
+}
+
+.titulo2{
+    color: rgb(226, 0, 0);
 }
