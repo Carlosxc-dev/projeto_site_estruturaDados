@@ -1,9 +1,21 @@
+@charset "UTF-8";
+/*
+    em html e id = em css e #
+    em html e class = em css e ponto (.)
+
+*/
 body{
     color: black;
     text-align: left;
     background-color: whitesmoke;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1#principal{
+    font-family: cursive;
+    background-color: rgb(43, 226, 226);
+    text-align: center;
 }
 
 h1{
