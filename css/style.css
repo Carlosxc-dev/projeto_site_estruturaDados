@@ -4,47 +4,22 @@
     em html e class = em css e ponto (.)
 
 */
+
 body{
-    color: black;
+    color: #0D0D0D;
     text-align: left;
-    background-color: whitesmoke;
+    background-color: #F2F2F2;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1#principal{
-    font-family: cursive;
-    background-color: rgb(43, 226, 226);
-    text-align: center;
-}
-
 h1{
-    text-align: left;
-    color: blue;
-    width: 475px;
-    height: 75px;
-
-    /*border-width: 10px;
-    border-style: solid;
-    border-color: black;*/
-
-    border: 10px, solid, black, ;
-
-    padding: 10px;/*coloca cima , direita, abaixo, esquerda se for igual coloca so um */
-
-    margin: auto;
-
-    outline-width: 10px;
-    outline-style: dashed;
-    outline-color: chartreuse;
+    color: #2A8C5E;
 }
 h2{
-    color: cornflowerblue;
+    color: #8C4F04;
 }
 h3{
-    color: black;
+    color:#D98F07;
 }
 
-.titulo2{
-    color: rgb(226, 0, 0);
-}
