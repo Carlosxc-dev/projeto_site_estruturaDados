@@ -21,6 +21,22 @@ h1#principal{
 h1{
     text-align: left;
     color: blue;
+    width: 475px;
+    height: 75px;
+
+    /*border-width: 10px;
+    border-style: solid;
+    border-color: black;*/
+
+    border: 10px, solid, black, ;
+
+    padding: 10px;/*coloca cima , direita, abaixo, esquerda se for igual coloca so um */
+
+    margin: auto;
+
+    outline-width: 10px;
+    outline-style: dashed;
+    outline-color: chartreuse;
 }
 h2{
     color: cornflowerblue;
