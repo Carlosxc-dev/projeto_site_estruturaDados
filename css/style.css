@@ -14,12 +14,49 @@ body{
 }
 
 h1{
-    color: #2A8C5E;
+    color: #0a5a08;
 }
 h2{
-    color: #8C4F04;
+    color: #76caa3;
 }
 h3{
-    color:#D98F07;
+    color: black;
 }
-
+/*seletores -----------------------------------*/
+#tituloPrincipal{
+    /*texto*/
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    color: green;
+    background-color:rgb(116, 202, 116);
+    text-align: center;
+    font-weight: bolder;
+    /*caixa*/
+    height: 100px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+.importante{
+    color: rgb(182, 0, 0);
+}
+.importante::before{
+    content: '-->';
+    font-weight: lighter;
+}
+.centroTela{
+    text-align: center;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    text-decoration: underline;
+}
+div > ol {
+    display: none;
+}
+div:hover > ol{
+    display: block;
+    background-color: rgb(116, 202, 116);
+}
