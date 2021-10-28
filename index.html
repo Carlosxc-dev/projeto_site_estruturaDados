@@ -10,55 +10,146 @@
 </head>
 
 <body>
-    <!--titulo -->
-    <h1 id="tituloPrincipal">estrutura de dados </h1>
+    Estrutura de Dados 
 
-    <!--introduca-->
-    <h1>introdução</h1>
-
-    <hr><!---linha horizontal-->
-
-    <!--sumario -->
-    <h1>topicos abordados</h1>
-    <ol type="1">
-        <li>lista estatica sequencial</li>
-        <li>lista estatica encadeada</li>
-        <li>ponteiros</li>
-        <li>lista dinamica simples</li>
-        <li>lista dinamica dupla</li>
-        <li>lista pilha</li>
-        <li>lista circular</li>
-        <li>lista fila</li>
-    </ol>
-    <hr>
-    <!---dives -->
-    <div>
-        <h1 class="centroTela">ponteiro</h1>
-        <ol>
-            <li>definicao</li>
-            <li>formas de implementat</li>
-            <li>mosdos de ins/ rem</li>
-        </ol>
-    </div>
-    <br>
-    <br>
-    <!--lista estatica sequencial-->
-    <h1>lista estatica sequencial</h1>
-        <!--topicos do assunto-->
-        <h2>definicao</h2>
-        <h2>forma de implementar</h2>
-        <h2>modos de inserir e remover</h2>
-        <h2 class="importante">busca binaria</h2>
+    linsk : lista estatica sequencial 
+            lista estica encadeada
+            ponteiros 
+            lista dinamica simples
+            lista dinamica dupla
+            pilha 
+            lista dinamica circular 
+            fila
     
-    <!--lista estatica encadeada-->
-    <h1>lista estatica encadeada</h1>
-        <!--topicos do assunto-->
-        <h2>definicao</h2>
-        <h2>forma de implementar</h2>
-        <h2>modos de inserir e remover</h2>
+        lista estatica sequencial 
+            - implementada com vetor
+            - para inserir/ remover deve-se deslocar todos os mebros 
+            - tamanho max fixo
+            - pode se realizar a busca binaria 
+            - memoria reservada antes de criar a lista
+            - nao apaga da memoria
+            - usar se for uma lista pequena , com insercao e remocao no fim
+        
+        lista estica encadeada
+            - implementada com vetor e struct
+            - elementos em indeces fora de ordem 
+            - na remocao o dispo ocupa o espaco no vetor
+            - pesquisa binaria nao funciona
+            - usar quando a movimentacao for mais importante
+            - para pesquisar andar varios links 
+
+        ponteiros 
+            - guarda enderecos de memoria
+            - aponta para um tipo de dado na memoria 
+            - o (*) acessa o conteudo
+            - o (&) informa o endereco da variavel
+            - alocacao dinamica
+                - guardada na biblioteca stdlib.h
+                - para alocar na memoria usa-se MALLOC
+                - para definir um tipo/ tamanho usa-se SIZEOF
+                - para indicar o tipo usa-se (tipo*)
+                
+        lista dinamica simples
+            - usa ponteiros e alocacao dinamica e structs
+            - cada no tem um ponteiro para proximo 
+            - aloca regioes diferentes de memoria 
+            - struct de ponteiros usa (->) para acessar os elementos
+            - sempre ter um ponto de partida da lista (*prim)
+            - remover itens usar FREE
+            - vantagens 
+                - reserva  espaco so na hora de inserir na lista
+                - nao precisa movimentar todos os itens 
+                - altera so os ponteiros 
+
+        lista dinamica dupla
+            - usa ponteiros e alocacao dinamica e structs
+            - cada no tem um ponteiro para proximo e para anterior
+            - remover itens usar FREE
+            - vantagens: navegacao bidirecional
+            - sempre destruir lista para liberar memoria alocada
+
+        pilha 
+            -LIFO (first-in first-out)
+            - ultimoa a entra e o primeiro a sair 
+            - nao tem ordem 
+            - estrutura do tipo lista que so remove da extremidade
+            - cuidados:
+                - underflow
+                - overflow
+            - implementada por vetor ou ponteiros
+            - nao usa parametros para remoção 
+
+        lista circular
+            - implementada por listas simple ou duplas 
+            - ponteiro do ultimo item aponta para o primeiro
+            - usada com structs 
+            - possui dependendo dados no meio da lista
+
+        fila
+            - FIFO (first-in first-out)
+            - so insere itens no final da lista 
+            - remocao ocorre do primeiro item inserido 
+            - implementada com lista simples, circular ou estatica
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </html>
