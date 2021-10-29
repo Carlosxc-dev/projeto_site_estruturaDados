@@ -16,41 +16,37 @@
     --fonte2: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 }
 header{
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+    text-shadow: 8px 8px 5px rgba(0, 0, 0, 0.466);
     min-width: 150px;
+    max-width: 1350px;
     text-align: center;
-    padding: 40px;
+    font-size: 3em;
     background-color: var(--cor3);
-    border-radius: 10px;
+    height: 150px;
+    margin: 0px;
+    padding: 10px;
+}
+
+header > h1{
+    font: normal bold 2em Impact;
+    color: white;
+    margin: 0px;
 }
 
 nav{
-    background-color: var(--cor4);
+    background-color: var(--cor2);
     width:1330px;
-    height: 50px;
+    height: 25px;
     margin: auto;
     border-radius: 5px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
+    margin-top: 3px;
 }
 
-nav > a {
-    background-color: var(--cor4);
-    color:white;
-
-}
-
-
-.tema {
-    font-family: var(--fonte2);
-    color: var(--cor0);
-    margin-bottom: 15px;
-    
-}
-header > p{
-    font-family: var(--fonte1);
-    color: black;
-
+nav > a{
+    margin: 10px;
+    color: var(--cor4);
 }
 
 h1{
@@ -63,13 +59,20 @@ h2{
 
 
 main{
-   background-color: white;
-   padding: 200px;
+   background-color:white;
    border-radius: 10px;
 
    min-width: 320px;
-   max-width: 800px;
+   max-width: 1000px;
    margin: auto;
+   margin-top: 3px;
+
+   padding: 5px 20px;
+
+}
+
+article{
+    margin: 100px;
 }
 
 body{
@@ -77,6 +80,7 @@ body{
     color: black;
     background-color: var(--cor0);
     line-height: 1.5em;/*espaco entre linhas */
+    margin: 0px;
 }
 
 
@@ -85,4 +89,14 @@ ul{
     list-style-type: '\2714\020\0020';
     columns: 1;
     list-style-position: inside;
+}
+
+footer{
+    min-width: 150px;
+    max-width: 1330px;
+    text-align: center;
+    background-color: var(--cor3);
+
+    margin: auto;
+    margin: 5px ;
 }
