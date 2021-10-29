@@ -6,90 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <title  >EstruturaDados</title>
+    <title>EstruturaDados</title>
 </head>
 
 <body>
-    Estrutura de Dados 
+    <!-- header e area de titulos gerais -->
+    <header>
+        <h1>Estrutura de Dados </h1>
+        <p>sempre faca alem do que voce consegue...</p>
+    </header>
+    <!-- nav area de links da pagina -->
+    <nav>
+        <a href="#">lista estatica sequencial</a>
+        <a href="#">lista estica encadeada</a>
+        <a href="#">ponteiros</a>
+        <a href="#">lista dinamica simples</a>
+        <a href="#">lista dinamica dupla</a>
+        <a href="#">pilha</a>
+        <a href="#">lista dinamica circular</a>
+        <a href="#">fila</a>
+    </nav>
+    <!-- main conteudo prinsipal do site -->
+    <main>
+        <!-- artigos sao assuntos relacionados ao tema -->
+        <article>
+            <h1>lista estatica sequencial</h1>
+            <ul>
+                <li>implementada com vetor</li>
+                <li>para inserir/ remover deve-se deslocar todos os mebros</li>
+                <li>tamanho max fixo</li>
+                <li>pode se realizar a busca binaria</li>
+                <li>memoria reservada antes de criar a lista</li>
+                <li>nao apaga da memoria</li>
+                <li>usar se for uma lista pequena , com insercao e remocao no fim</li>
+            </ul>
 
-    linsk : lista estatica sequencial 
-            lista estica encadeada
-            ponteiros 
-            lista dinamica simples
-            lista dinamica dupla
-            pilha 
-            lista dinamica circular 
-            fila
-    
-        lista estatica sequencial 
-            - implementada com vetor
-            - para inserir/ remover deve-se deslocar todos os mebros 
-            - tamanho max fixo
-            - pode se realizar a busca binaria 
-            - memoria reservada antes de criar a lista
-            - nao apaga da memoria
-            - usar se for uma lista pequena , com insercao e remocao no fim
-        
-        lista estica encadeada
-            - implementada com vetor e struct
-            - elementos em indeces fora de ordem 
-            - na remocao o dispo ocupa o espaco no vetor
-            - pesquisa binaria nao funciona
-            - usar quando a movimentacao for mais importante
-            - para pesquisar andar varios links 
+            <h1>lista estica encadeada</h1>
+            <ul>
+                <li>implementada com vetor e struct</li>
+                <li>elementos em indeces fora de ordem</li>
+                <li>na remocao o dispo ocupa o espaco no vetor</li>
+                <li>pesquisa binaria nao funciona</li>
+                <li>usar quando a movimentacao for mais importante</li>
+                <li>para pesquisar andar varios links</li>
+            </ul>
 
-        ponteiros 
-            - guarda enderecos de memoria
-            - aponta para um tipo de dado na memoria 
-            - o (*) acessa o conteudo
-            - o (&) informa o endereco da variavel
-            - alocacao dinamica
-                - guardada na biblioteca stdlib.h
-                - para alocar na memoria usa-se MALLOC
-                - para definir um tipo/ tamanho usa-se SIZEOF
-                - para indicar o tipo usa-se (tipo*)
-                
-        lista dinamica simples
-            - usa ponteiros e alocacao dinamica e structs
-            - cada no tem um ponteiro para proximo 
-            - aloca regioes diferentes de memoria 
-            - struct de ponteiros usa (->) para acessar os elementos
-            - sempre ter um ponto de partida da lista (*prim)
-            - remover itens usar FREE
-            - vantagens 
-                - reserva  espaco so na hora de inserir na lista
-                - nao precisa movimentar todos os itens 
-                - altera so os ponteiros 
+            <h1>ponteiros</h1>
+            <ul>
+                <li>guarda enderecos de memoria</li>
+                <li>aponta para um tipo de dado na memoria</li>
+                <li>o (*) acessa o conteudo</li>
+                <li>o (&) informa o endereco da variavel</li>
+                <h2>alocacao dinamica</h2>
+                <ul>
+                    <li>guardada na biblioteca stdlib.h</li>
+                    <li>para alocar na memoria usa-se MALLOC</li>
+                    <li>para definir um tipo/ tamanho usa-se SIZEOF</li>
+                    <li>para indicar o tipo usa-se (tipo*)</li>
+                </ul>
+            </ul>
 
-        lista dinamica dupla
-            - usa ponteiros e alocacao dinamica e structs
-            - cada no tem um ponteiro para proximo e para anterior
-            - remover itens usar FREE
-            - vantagens: navegacao bidirecional
-            - sempre destruir lista para liberar memoria alocada
+            <h1>lista dinamica simples</h1>
+            <ul>
+                <li>usa ponteiros e alocacao dinamica e structs</li>
+                <li>cada no tem um ponteiro para proximo</li>
+                <li>aloca regioes diferentes de memoria</li>
+                <li>struct de ponteiros usa (->) para acessar os elementos</li>
+                <li>sempre ter um ponto de partida da lista (*prim)</li>
+                <li>remover itens usar FREE</li>
+                <h2>vantagens</h2>
+                <ul>
+                    <li>reserva espaco so na hora de inserir na lista</li>
+                    <li>nao precisa movimentar todos os itens</li>
+                    <li>altera so os ponteiros</li>
+                </ul>
+            </ul>
 
-        pilha 
-            -LIFO (first-in first-out)
-            - ultimoa a entra e o primeiro a sair 
-            - nao tem ordem 
-            - estrutura do tipo lista que so remove da extremidade
-            - cuidados:
-                - underflow
-                - overflow
-            - implementada por vetor ou ponteiros
-            - nao usa parametros para remoção 
+            <h1>lista dinamica dupla</h1>
+            <ul>
+                <li>usa ponteiros e alocacao dinamica e structs</li>
+                <li>cada no tem um ponteiro para proximo e para anterior</li>
+                <li>remover itens usar FREE</li>
+                <li>vantagens: navegacao bidirecional</li>
+                <li>sempre destruir lista para liberar memoria alocada</li>
+            </ul>
 
-        lista circular
-            - implementada por listas simple ou duplas 
-            - ponteiro do ultimo item aponta para o primeiro
-            - usada com structs 
-            - possui dependendo dados no meio da lista
+            <h1>pilha</h1>
+            <ul>
+                <li>LIFO (first-in first-out)</li>
+                <li>ultimoa a entra e o primeiro a sair</li>
+                <li>nao tem ordem</li>
+                <li>estrutura do tipo lista que so remove da extremidade</li>
+                <h2>cuidados:</h2>
+                <ul>
+                    <li>underflow</li>
+                    <li>overflow</li>
+                </ul>
+                <li>implementada por vetor ou ponteiros</li>
+                <li>nao usa parametros para remoção</li>
+            </ul>
 
-        fila
-            - FIFO (first-in first-out)
-            - so insere itens no final da lista 
-            - remocao ocorre do primeiro item inserido 
-            - implementada com lista simples, circular ou estatica
+            <h1>lista circular</h1>
+            <ul>
+                <li>implementada por listas simple ou duplas</li>
+                <li>ponteiro do ultimo item aponta para o primeiro</li>
+                <li>usada com structs</li>
+                <li>possui dependendo dados no meio da lista</li>
+            </ul>
+
+            <h1>fila</h1>
+            <ul>
+                <li>FIFO (first-in first-out)</li>
+                <li>so insere itens no final da lista</li>
+                <li>remocao ocorre do primeiro item inserido</li>
+                <li>implementada com lista simples, circular ou estatica</li>
+            </ul>
+        </article>
+    </main>
 
 
 

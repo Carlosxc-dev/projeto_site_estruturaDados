@@ -4,59 +4,65 @@
     em html e class = em css e ponto (.)
 
 */
+/* variaveis nomes iniciados com -- obrigatorio*/
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: cursive;
+    --fonte2: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+header{
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+    min-width: 150px;
+    text-align: center;
+    padding: 40px;
+}
 
-body{
-    color: #0D0D0D;
-    text-align: left;
-    background-color: #F2F2F2;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+haeder > h1 {
+    font-family: var(--fonte2);
+    margin-bottom: 15px;
+    text-size-adjust: 20px;
+}
+header > p{
+    font-family: var(--fonte1);
+    color: black;
+
 }
 
 h1{
-    color: #0a5a08;
+    color: var(--cor4);
 }
+
 h2{
-    color: #76caa3;
+    color: var(--cor3);
 }
-h3{
+
+
+main{
+   background-color: white;
+   padding: 200px;
+   border-radius: 10px;
+
+   min-width: 320px;
+   max-width: 800px;
+   margin: auto;
+}
+
+body{
+    font-family: var(--fonte0);
     color: black;
+    background-color: var(--cor0);
+    line-height: 1.5em;/*espaco entre linhas */
 }
-/*seletores -----------------------------------*/
-#tituloPrincipal{
-    /*texto*/
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2em;
-    color: green;
-    background-color:rgb(116, 202, 116);
-    text-align: center;
-    font-weight: bolder;
-    /*caixa*/
-    height: 100px;
-    width: 500px;
-    margin: auto;
-    text-align: center;
-}
-.importante{
-    color: rgb(182, 0, 0);
-}
-.importante::before{
-    content: '-->';
-    font-weight: lighter;
-}
-.centroTela{
-    text-align: center;
-}
-a:visited{
-    color: red;
-}
-a:hover{
-    text-decoration: underline;
-}
-div > ol {
-    display: none;
-}
-div:hover > ol{
-    display: block;
-    background-color: rgb(116, 202, 116);
+
+
+
+ul{
+    list-style-type: '\2714\020\0020';
+    columns: 1;
+    list-style-position: inside;
 }
