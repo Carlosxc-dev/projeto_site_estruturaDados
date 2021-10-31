@@ -1,7 +1,5 @@
 @charset "UTF-8";
 /*
-    em html e id = em css e #  --  so pode udar id uma vez
-    em html e class = em css e ponto (.)
 
 */
 /* variaveis nomes iniciados com -- obrigatorio*/
@@ -15,88 +13,78 @@
     --fonte1: cursive;
     --fonte2: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 }
+
+body{
+    background-color: var(--cor0);
+}
+
 header{
     text-shadow: 8px 8px 5px rgba(0, 0, 0, 0.466);
-    min-width: 150px;
-    max-width: 1350px;
     text-align: center;
     font-size: 3em;
     background-color: var(--cor3);
-    height: 150px;
-    margin: 0px;
-    padding: 10px;
 }
 
 header > h1{
     font: normal bold 2em Impact;
     color: white;
-    margin: 0px;
 }
 
 nav{
     background-color: var(--cor2);
-    width:1330px;
-    height: 25px;
-    margin: auto;
-    border-radius: 5px;
     text-align: center;
-    padding-top: 10px;
-    margin-top: 3px;
 }
 
 nav > a{
-    margin: 10px;
     color: var(--cor4);
+    padding: 15px;
 }
-
-h1{
-    color: var(--cor4);
-}
-
-h2{
-    color: var(--cor3);
-}
-
 
 main{
    background-color:white;
    border-radius: 10px;
 
-   min-width: 320px;
+   min-width: 300px;
    max-width: 1000px;
    margin: auto;
-   margin-top: 3px;
-
-   padding: 5px 20px;
-
 }
 
 article{
-    margin: 100px;
-}
-
-body{
-    font-family: var(--fonte0);
-    color: black;
-    background-color: var(--cor0);
+    padding: 20px 0px 20px 150px;
     line-height: 1.5em;/*espaco entre linhas */
-    margin: 0px;
+
 }
 
+article > h1{
+    color: var(--cor4);
+    font-size: 2em;
+}
 
+article > ul > h2{
+    color: var(--cor3);
+}
 
-ul{
+article > ul{
     list-style-type: '\2714\020\0020';
     columns: 1;
     list-style-position: inside;
+    padding: 10px 0px 10px 25px ;
+
 }
 
 footer{
-    min-width: 150px;
-    max-width: 1330px;
-    text-align: center;
     background-color: var(--cor3);
+    height: 100px;
+}
 
-    margin: auto;
-    margin: 5px ;
+footer > p{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 30px;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
 }
