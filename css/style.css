@@ -24,7 +24,6 @@ header{
     font-size: 3em;
     height: 150px;
 
- 
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
 
 }
@@ -34,7 +33,6 @@ header > h1{
     color: white;
     padding: 15px;
 
- 
 }
 
 nav{
